@@ -1,0 +1,204 @@
+.influencer-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5c3c43;
+}
+
+.dash-header {
+  margin-bottom: 2rem;
+}
+
+.dash-header h2 {
+  font-size: 2rem;
+  color: #8c5663;
+  margin-bottom: 0.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: #fffafb;
+  border: 1px solid #f2d5dc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(212, 163, 179, 0.1);
+}
+
+.stat-card.highlight {
+  background-color: #fcebef;
+  border-color: #e5b3c3;
+}
+
+.stat-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a47c85;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #8c5663;
+}
+
+.stat-desc {
+  font-size: 0.85rem;
+  color: #a47c85;
+  margin-top: 0.5rem;
+}
+
+.level-card {
+  background-color: #ffffff;
+  border: 2px solid #b76e79;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 6px 16px rgba(183, 110, 121, 0.15);
+}
+
+.level-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.level-header h3 {
+  color: #8c5663;
+  font-size: 1.3rem;
+}
+
+.progress-bar-bg {
+  height: 12px;
+  background-color: #f2d5dc;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #b76e79;
+  border-radius: 6px;
+  transition: width 0.5s ease-out;
+}
+
+.level-hint {
+  font-size: 0.95rem;
+  color: #724852;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  color: #8c5663;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #f2d5dc;
+  padding-bottom: 0.5rem;
+}
+
+.coupon-form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #f2d5dc;
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background-color: #b76e79;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #9c5c67;
+}
+
+.coupons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coupon-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffafb;
+  border: 1px dashed #b76e79;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+.coupon-code {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #8c5663;
+  letter-spacing: 2px;
+}
+
+.coupon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.9rem;
+  color: #724852;
+}
+
+.withdrawal-section {
+  margin-top: 1rem;
+}
+
+.btn-withdraw {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.btn-withdraw.active {
+  background-color: #2e7d32; /* Green for success/ready */
+  color: #ffffff;
+}
+
+.btn-withdraw.active:hover {
+  background-color: #1b5e20;
+}
+
+.btn-withdraw.disabled {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
